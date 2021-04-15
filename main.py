@@ -1,3 +1,5 @@
+from pprint import pprint
+
 from pickle_library import *
 from produs import Produs
 from shop import Shop
@@ -21,5 +23,8 @@ from user import User
 # save_object('users.pickle', [])
 
 shop = Shop()
-
+#citire de la tastatura produs?
+#plus da
+#shop.add_product_from_key()
+pprint(shop.products)
 print(shop.products)
