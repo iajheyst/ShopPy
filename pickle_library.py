@@ -3,7 +3,7 @@ import pickle
 
 def save_object(filename, object_):
     with open(filename, 'wb') as handle:
-        pickle.dump(object_, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump(object_, handle)
 
 
 def load_object(filename):
