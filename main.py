@@ -1,5 +1,6 @@
 from pickle_library import *
 from produs import Produs
+from shop import Shop
 from user import User
 
 # acer = Produs("Laptop acer 15.6'", 400, "Office")
@@ -10,5 +11,15 @@ from user import User
 #
 # print(ionut.adresa)
 
-save_object('filename.pickle', ['Hello', "world"])
-print(load_object('filename.pickle'))
+# lista = []
+# lista.append(Produs("Acer", 100, "descriere 1"))
+# lista.append(Produs("Asus", 200, "descriere 2"))
+# lista.append(Produs("Dell", 150, "descriere 3"))
+#
+# save_object('produse.pickle', lista)
+# save_object('categories.pickle', [])
+# save_object('users.pickle', [])
+
+shop = Shop()
+
+print(shop.products)

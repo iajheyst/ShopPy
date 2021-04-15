@@ -9,3 +9,9 @@ class Produs:
         self.pret = pret
         self.descriere = descriere
         self.categorie = categorie
+
+    def __repr__(self):
+        return f"{self.titlu}, {self.pret}"
+
+    def __str__(self):
+        return f"{self.titlu}, {self.pret}"
