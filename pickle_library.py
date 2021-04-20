@@ -13,7 +13,8 @@ def load_object(filename):
 
 
 if __name__ == '__main__':
-    a = {'hello': 'world'}
-    save_object('filename.pickle', a)
-    b = load_object('filename.pickle')
-    print(a == b)
+    # a = {'hello': 'world'}
+    # save_object('filename.pickle', a)
+    # b = load_object('filename.pickle')
+    # print(a == b)b
+    save_object("produse.pickle", [])

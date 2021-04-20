@@ -1,6 +1,6 @@
 from pickle_library import load_object, save_object
 from produs import Produs
-import utils
+from utils import *
 
 
 class Shop:
@@ -29,7 +29,20 @@ class Shop:
 
     def add_product_from_key(self):
         titlu = input("titlu=")
-        pret = utils.read_valid_float("pret=")
+        pret = read_valid_float("pret=")
         descriere = input("descriere=")
         produs = Produs(titlu, pret, descriere)
         self.add_product(produs)
+
+    def update_product(self):
+        counter = 1
+        for product in self.products:
+            print(f"{counter}. {product.titlu}")
+            counter = counter + 1
+        number = read_interval_valid_int("Select product to modify: \n", 1, counter-1)
+        position = number-1
+        product = self.products[position]
+        product.titlu = input("titlu=")
+        product.pret = read_valid_float("pret=")
+        product.descriere = input("descriere=")
+        self.save()

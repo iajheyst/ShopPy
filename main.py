@@ -7,6 +7,7 @@ def print_menu():
     print("0. exit")
     print("1. add product")
     print("2. list products")
+    print("3. update product")
 
 
 def interpret_command(command_):
@@ -14,6 +15,8 @@ def interpret_command(command_):
         shop.add_product_from_key()
     elif command_ == 2:
         print(shop.products)
+    elif command_ == 3:
+        shop.update_product()
 
 
 shop = Shop()
