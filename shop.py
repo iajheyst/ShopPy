@@ -4,9 +4,6 @@ import utils
 
 
 class Shop:
-    # products = []
-    # categories = []
-    # users = []
 
     def __init__(self):
         self.products = load_object('produse.pickle')
