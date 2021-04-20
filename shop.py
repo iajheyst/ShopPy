@@ -1,5 +1,6 @@
 from pickle_library import load_object, save_object
 from produs import Produs
+import utils
 
 
 class Shop:
@@ -17,7 +18,7 @@ class Shop:
         save_object('categories.pickle', self.categories)
         save_object('users.pickle', self.users)
 
-    def add_product(self,product):
+    def add_product(self, product):
         self.products.append(product)
         self.save()
 
@@ -30,10 +31,8 @@ class Shop:
         self.save()
 
     def add_product_from_key(self):
-        titlu=input("titlu=")
-        pret=input("pret=")
-        descriere=input("descriere=")
-        produs=Produs(titlu, pret, descriere)
+        titlu = input("titlu=")
+        pret = utils.read_valid_float("pret=")
+        descriere = input("descriere=")
+        produs = Produs(titlu, pret, descriere)
         self.add_product(produs)
-
-

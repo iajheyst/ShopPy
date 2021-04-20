@@ -29,6 +29,8 @@ from user import User
 # #shop.add_product_from_key()
 # pprint(shop.products)
 # print(shop.products)
+from utils import read_valid_int
+
 
 def print_menu():
     print("0. exit")
@@ -36,19 +38,19 @@ def print_menu():
     print("2. list products")
 
 def interpret_command(command):
-    if command == "1":
+    if command == 1:
         shop.add_product_from_key()
-    elif command == "2":
+    elif command == 2:
         print(shop.products)
 
 shop = Shop()
 print_menu()
-command = input("Introduceti comanda: ")
+command = read_valid_int("Introduceti comanda: ")
 interpret_command(command)
 
-while command != '0':
+while command != 0:
     print_menu()
-    command = input("Introduceti comanda: ")
+    command = read_valid_int("Introduceti comanda: ")
     interpret_command(command)
 
 
