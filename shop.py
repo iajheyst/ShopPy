@@ -39,10 +39,20 @@ class Shop:
         for product in self.products:
             print(f"{counter}. {product.titlu}")
             counter = counter + 1
-        number = read_interval_valid_int("Select product to modify: \n", 1, counter-1)
-        position = number-1
+        number = read_interval_valid_int("Select product to modify: \n", 1, counter - 1)
+        position = number - 1
         product = self.products[position]
         product.titlu = input("titlu=")
         product.pret = read_valid_float("pret=")
         product.descriere = input("descriere=")
+        self.save()
+
+    def delete_product(self):
+        counter = 1
+        for product in self.products:
+            print(f"{counter}. {product.titlu}")
+            counter = counter + 1
+        number = read_interval_valid_int("Select product to delete: \n", 1, counter - 1)
+        position = number - 1
+        self.products.pop(position)
         self.save()
