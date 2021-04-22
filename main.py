@@ -9,17 +9,35 @@ def print_menu():
     print("2. list products")
     print("3. update product")
     print("4. delete product")
+    print("5. add category")
+    print("6. list categories")
+    print("7. update category")
+    print("8. delete category")
+    print("9. delete all products")
+    print("10. delete all categories")
 
 
 def interpret_command(command_):
     if command_ == 1:
         shop.add_product_from_key()
     elif command_ == 2:
-        print(shop.products)
+        shop.show_products()
     elif command_ == 3:
         shop.update_product()
     elif command_ == 4:
         shop.delete_product()
+    elif command_ == 5:
+        shop.add_category_from_key()
+    elif command_ == 6:
+        shop.show_categories()
+    elif command_ == 7:
+        shop.update_category()
+    elif command_ == 8:
+        shop.delete_category()
+    elif command_ == 9:
+        shop.delete_all_products()
+    elif command_ == 10:
+        shop.delete_all_categories()
 
 
 shop = Shop()
