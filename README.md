@@ -30,11 +30,11 @@ Exercitii:
 2. Scrieti o functie care sa genereze sirul lui Fibonacci. Bonus points pentru recursivitate.
 3. Scrieti o functie care sa genereze 100 de tuple de numere pitagoreice. (3, 4, 5 sunt numere pitagoreice, deoarece 3**2 + 4**2  == 5**2)
 4. Creati un proiect nou de Django, cu o aplicatie, care contine o lista goala de URL-uri.
-5. Scrieti modelele pentru un server Django care tine facturi de urmatoarea forma: https://www.gestiune-stocuri.ro/media/images/facturaFACT0539.jpg
-6. Scrieti modelele pentru o retea sociala cu utilizatori, postari, grupuri
-7. Scrieti modelele pentru o aplicatie de transfer bancar (utilizatori, conturi, transferuri)
-8, 9. Scrieti modelele pentru un sistem de sanatate (doctori, farmacisti, pacienti, medicamente, retete (prescriptii), consultatii)
-10. Scrieti modelele pentru o fabrica de paine: ingrediente, retete, produse finite
+5. Scrieti modelele pentru o retea sociala cu utilizatori, postari, grupuri
+6. Scrieti modelele pentru o fabrica de paine: ingrediente, retete, produse finite
+7. Scrieti modelele pentru un server Django care tine facturi de urmatoarea forma: https://www.gestiune-stocuri.ro/media/images/facturaFACT0539.jpg
+8. Scrieti modelele pentru o aplicatie de transfer bancar (utilizatori, conturi, transferuri)
+9, 10. Scrieti modelele pentru un sistem de sanatate (doctori, farmacisti, pacienti, medicamente, retete (prescriptii), consultatii)
 
 Challenges:
 - Simulate and break the Enigma machine https://en.wikipedia.org/wiki/Enigma_machine
