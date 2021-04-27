@@ -73,9 +73,10 @@ Legenda:
 - numele_proiectului se inlocuieste cu numele efectiv al proiectului (django_shoppy, i_shop, etc)
 
 Crearea unui proiect Django:
-1. Deschidem un "cmd", si dam comanda:
-    django-admin createproject numele_proiectului
-2. Tot in cmd, dam comanda:
+1. Deschidem un "cmd", si mergem cu comanda "cd" spre folderul unde creem proiectul.
+2. Deschidem un "cmd", si dam comanda:
+    django-admin startproject numele_proiectului
+3. Tot in cmd, dam comanda:
     cd numele_proiectului
 
 Crearea unei aplicatii noi in proiectul existent Django:
