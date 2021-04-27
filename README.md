@@ -29,7 +29,12 @@ Exercitii:
 1. Alegeti un site, si automatizati un proces cu selenium, sau requests.
 2. Scrieti o functie care sa genereze sirul lui Fibonacci. Bonus points pentru recursivitate.
 3. Scrieti o functie care sa genereze 100 de tuple de numere pitagoreice. (3, 4, 5 sunt numere pitagoreice, deoarece 3**2 + 4**2  == 5**2)
-4. 
+4. Creati un proiect nou de Django, cu o aplicatie, care contine o lista goala de URL-uri.
+5. Scrieti modelele pentru un server Django care tine facturi de urmatoarea forma: https://www.gestiune-stocuri.ro/media/images/facturaFACT0539.jpg
+6. Scrieti modelele pentru o retea sociala cu utilizatori, postari, grupuri
+7. Scrieti modelele pentru o aplicatie de transfer bancar (utilizatori, conturi, transferuri)
+8, 9. Scrieti modelele pentru un sistem de sanatate (doctori, farmacisti, pacienti, medicamente, retete (prescriptii), consultatii)
+10. Scrieti modelele pentru o fabrica de paine: ingrediente, retete, produse finite
 
 Challenges:
 - Simulate and break the Enigma machine https://en.wikipedia.org/wiki/Enigma_machine
@@ -80,7 +85,7 @@ Crearea unui proiect Django:
     cd numele_proiectului
 
 Crearea unei aplicatii noi in proiectul existent Django:
-1. Deschidem proiectul in PyCharm, si ii creem un nou Virtual Environment.
+1. Deschidem proiectul (folderul care il contine pe "manage.py") in PyCharm, si ii creem un nou Virtual Environment.
 2. Restartam terminalul din PyCharm,si dam comanda:
     pip install django
 3. In terminalul din PyCharm, dam comanda:
@@ -99,5 +104,12 @@ Adaugarea URL-urilor unei aplicatii in proiect:
 2. Deschidem numele_proiectului/urls.py, si adaugam in lista urlpatterns un nou element:
     path('numele_aplicatiei/', include('numele_aplicatiei.urls'))
    
+Crearea unui superuser (inclusiv pentru Django admin panel)
+    In terminal, dam comanda: python manage.py createsuperuser
+
+Pornirea serverului:
+    In terminal, dam comanda: python manage.py runserver
+
+
 Crearea unui view:
 1. 
