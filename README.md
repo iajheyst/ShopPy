@@ -48,7 +48,7 @@ Scoring:
 - 2 pt Solution works
 - 2 pt PEP8 coding standards
 - 1 pt code readability
-
+- 1 pt extra pentru best solution
 
 Bibliografie video 
 - Why Isn't Functional Programming the Norm? – Richard Feldman - https://www.youtube.com/watch?v=QyJZzq0v7Z4
